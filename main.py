@@ -11,9 +11,9 @@ selected_page = st.sidebar.selectbox(
 
 # Map page names to script files
 mapper_name_fn = {
-    "first page": 'D:/Epsilon Ai/Airbnb-Project/app1.py',
-    "second page": 'D:/Epsilon Ai/Airbnb-Project/app2.py',
-    "third page": 'D:/Epsilon Ai/Airbnb-Project/app3.py'
+    "first page": 'app1.py',
+    "second page": 'app2.py',
+    "third page": 'app3.py'
 }
 
 # Execute the selected script
