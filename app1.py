@@ -132,7 +132,7 @@ def main():
     # model = load_model()
 
     # Get inputs from the user for prediction
-    inputs = user_input()
+    # inputs = user_input()
 
     # # When button is clicked, make prediction
     # if model:
