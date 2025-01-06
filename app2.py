@@ -27,7 +27,7 @@ def display_second_page():
     
     # Images related to uni-variate numerical analysis
     for i in range(1, 12):
-        img_path = f"D:/Epsilon Ai/Airbnb-Project/static/images/uni{i}.png"
+        img_path = f"/mount/src/minatharwat93-airbnb_project_regression/tree/main/static/images/uni{i}.png"
         st.image(img_path, caption=f"Uni-variate Numerical Image {i}")
 
     # Uni-variate categorical analysis
