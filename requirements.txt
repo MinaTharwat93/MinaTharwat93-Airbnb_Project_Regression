@@ -2,3 +2,4 @@ seaborn
 matplotlib
 pandas
 streamlit
+set_page_config
