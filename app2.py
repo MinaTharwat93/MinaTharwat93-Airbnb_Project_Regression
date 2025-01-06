@@ -52,7 +52,7 @@ def display_second_page():
     
     # Images related to uni-variate categorical analysis
     for i in range(1, 9):
-        img_path = f"/mount/src/minatharwat93-airbnb_project_regression/unic{i}.png"
+        img_path = f"/mount/src/minatharwat93-airbnb_project_regression/static/images/unic{i}.png"
         st.image(img_path, caption=f"Uni-variate Categorical Image {i}")
 
     # Average price per room type
@@ -63,8 +63,8 @@ def display_second_page():
     plt.title('Average Price per Room Type')
     plt.show()
     """)
-    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/q1.png", caption="Average Price per Room Type")
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/qd1.png", caption="Price Distribution")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/q1.png", caption="Average Price per Room Type")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/qd1.png", caption="Price Distribution")
 
     # Price variation over time across seasons
     st.subheader("How does the price vary over time across different seasons?")
@@ -80,8 +80,8 @@ def display_second_page():
     plt.tight_layout()
     plt.show()
     """)
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/q2.png", caption="Price Over Time by Season")
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/qd2.png", caption="Price Variation")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/q2.png", caption="Price Over Time by Season")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/qd2.png", caption="Price Variation")
 
     # Correlation between price and availability
     st.subheader("How does the price of properties correlate with their availability for the year?")
@@ -90,8 +90,8 @@ def display_second_page():
     plt.title('Availability by Room Type')
     plt.show()
     """)
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/q3.png", caption="Availability by Room Type")
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/qd3.png", caption="Price vs Availability")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/q3.png", caption="Availability by Room Type")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/qd3.png", caption="Price vs Availability")
 
     # Top 10 neighborhoods with highest listings and room types
     st.subheader("Top 10 Neighborhoods with Highest Listings and Room Types")
@@ -104,8 +104,8 @@ def display_second_page():
     plt.ylabel('Neighbourhood')
     plt.show()
     """)
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/q4.png", caption="Top 10 Neighborhoods")
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/qd4.png", caption="Listings by Room Type")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/q4.png", caption="Top 10 Neighborhoods")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/qd4.png", caption="Listings by Room Type")
 
     # Relationship between minimum nights and room type across seasons
     st.subheader("What is the relationship between minimum nights and room type across different seasons?")
@@ -114,8 +114,8 @@ def display_second_page():
     plt.title('Minimum Nights by Room Type and Season')
     plt.show()
     """)
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/q5.png", caption="Minimum Nights by Room Type")
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/qd5.png", caption="Room Type Seasonal Comparison")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/q5.png", caption="Minimum Nights by Room Type")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/qd5.png", caption="Room Type Seasonal Comparison")
 
     # Distribution of room types across cities
     st.subheader("What is the distribution of room types across cities?")
@@ -125,7 +125,7 @@ def display_second_page():
     plt.title('Distribution of Room Types Across Cities')
     plt.show()
     """)
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/q6.png", caption="Room Types Distribution")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/q6.png", caption="Room Types Distribution")
 
     # Price variation over time by room type
     st.subheader("How does the price of accommodations vary over time by room type?")
@@ -138,8 +138,8 @@ def display_second_page():
     plt.tight_layout()
     plt.show()
     """)
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/q7.png", caption="Price Variation by Room Type")
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/qd7.png", caption="Price Trends")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/q7.png", caption="Price Variation by Room Type")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/qd7.png", caption="Price Trends")
 
     # Heatmap of correlations
     st.subheader("Correlation Heatmap")
@@ -147,7 +147,7 @@ def display_second_page():
     plt.figure(figsize=(10,8))
     sns.heatmap(df.select_dtypes(include=['number']).corr(), fmt=".2f", annot=True)
     """)
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/heatmap.png", caption="Correlation Heatmap")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/heatmap.png", caption="Correlation Heatmap")
 
 # Display the page
 display_second_page()
