@@ -11,9 +11,9 @@ selected_page = st.sidebar.selectbox(
 
 # Map page names to script files
 mapper_name_fn = {
-    "first page": 'app1.py',
-    "second page": 'app2.py',
-    "third page": 'app3.py'
+    "first page": '/mount/src/minatharwat93-airbnb_project_regression/app1.py',
+    "second page": '/mount/src/minatharwat93-airbnb_project_regression/app2.py',
+    "third page": '/mount/src/minatharwat93-airbnb_project_regression/app3.py'
 }
 
 # Execute the selected script
