@@ -52,7 +52,7 @@ def display_second_page():
     
     # Images related to uni-variate categorical analysis
     for i in range(1, 9):
-        img_path = f"D:/Epsilon Ai/Airbnb-Project/static/images/unic{i}.png"
+        img_path = f"/mount/src/minatharwat93-airbnb_project_regression/unic{i}.png"
         st.image(img_path, caption=f"Uni-variate Categorical Image {i}")
 
     # Average price per room type
@@ -63,7 +63,7 @@ def display_second_page():
     plt.title('Average Price per Room Type')
     plt.show()
     """)
-    st.image("D:/Epsilon Ai/Airbnb-Project/static/images/q1.png", caption="Average Price per Room Type")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/q1.png", caption="Average Price per Room Type")
     st.image("D:/Epsilon Ai/Airbnb-Project/static/images/qd1.png", caption="Price Distribution")
 
     # Price variation over time across seasons
