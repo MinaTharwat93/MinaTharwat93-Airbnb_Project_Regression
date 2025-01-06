@@ -63,7 +63,7 @@ def display_second_page():
     plt.title('Average Price per Room Type')
     plt.show()
     """)
-    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/images/q1.png", caption="Average Price per Room Type")
+    st.image("/mount/src/minatharwat93-airbnb_project_regression/static/q1.png", caption="Average Price per Room Type")
     st.image("D:/Epsilon Ai/Airbnb-Project/static/images/qd1.png", caption="Price Distribution")
 
     # Price variation over time across seasons
