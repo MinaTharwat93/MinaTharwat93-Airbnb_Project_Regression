@@ -1,5 +1,3 @@
-os
-dill
 seaborn
 matplotlib
 pandas
