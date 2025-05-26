@@ -131,17 +131,17 @@ Explain my column:
 17.	season (extract): The season (e.g., Summer, Winter) during which the data is relevant or the property is analyzed.
     """)
 
-# Function to display the map (via an iframe)
-def display_map():
-    st.title("USA Map Airbnb")
-    html_file_path = os.path.join(os.path.dirname(__file__), 'usa_map.html')
+# # Function to display the map (via an iframe)
+# def display_map():
+#     st.title("USA Map Airbnb")
+#     html_file_path = os.path.join(os.path.dirname(__file__), 'usa_map.html')
 
-    if os.path.exists(html_file_path):
-        with open(html_file_path, 'r') as f:
-            html_content = f.read()
-            components.html(html_content, height=500, width=900)
-    else:
-        st.error("HTML file not found! Please make sure the file path is correct.")
+#     if os.path.exists(html_file_path):
+#         with open(html_file_path, 'r') as f:
+#             html_content = f.read()
+#             components.html(html_content, height=500, width=900)
+#     else:
+#         st.error("HTML file not found! Please make sure the file path is correct.")
 
 # Streamlit UI for input
 def user_input():
@@ -188,7 +188,7 @@ def user_input():
 def main():
     display_introduction()
     st.write("---")
-    display_map()
+    # display_map()
 
     model = load_model()
     inputs = user_input()
